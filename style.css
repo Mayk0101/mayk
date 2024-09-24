@@ -1,0 +1,160 @@
+/* Estilos Globais */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c2f33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Cartão de Perfil */
+.profile-card {
+    background-color: #23272a;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    border: 4px solid #7289da;
+}
+
+.username {
+    font-size: 2.5rem;
+    color: #7289da;
+}
+
+.status-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.status {
+    color: #43b581;
+    font-size: 1.2rem;
+}
+
+.status-gif {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Links Sociais */
+.social-links a {
+    text-decoration: none;
+    color: #99aab5;
+    margin: 0 10px;
+    font-size: 1.1rem;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+/* Seção Sobre Mim */
+.about-me {
+    background-color: #2c2f33;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Meus Projetos */
+.projects {
+    background-color: #2c2f33;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+.projects h2 {
+    color: #7289da;
+}
+
+.projects p {
+    margin: 10px 0 20px;
+    font-size: 1.1rem;
+}
+
+/* Layout Responsivo de Funcionalidades do Bot */
+.project-features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature {
+    max-width: 45%;
+    text-align: center;
+}
+
+.feature img {
+    border-radius: 10px;
+    border: 2px solid #7289da;
+    transition: transform 0.3s ease;
+}
+
+.feature img:hover {
+    transform: scale(1.05);
+}
+
+/* Botão "Me Adicione" */
+.add-button-container {
+    margin-top: 20px;
+}
+
+.add-button {
+    padding: 12px 24px;
+    background-color: #7289da;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+.add-button:hover {
+    background-color: #5a6fa7;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.flag-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+iframe, img {
+    border-radius: 5px;
+    border: 1px solid #7289da;
+}
