@@ -145,7 +145,42 @@
             right: 10px; 
             top: 1050px; 
         }
-
+        .media-container {
+            position: relative; /* Permite que os filhos usem posições absolutas em relação a este contêiner */
+            margin-top: 50px; /* Espaçamento superior opcional */
+            text-align: center; /* Centraliza o conteúdo */
+        }
+        
+        .video-player {
+            width: 800px; /* Tamanho fixo para desktop */
+            height: auto; /* Altura ajustada automaticamente */
+            margin: 0 auto; /* Centraliza o vídeo */
+        }
+        
+        .video-player iframe {
+            width: 100%; /* Faz com que o iframe ocupe toda a largura do container */
+            height: 450px; /* Altura do vídeo */
+            border: none; /* Remover borda */
+        }
+        
+        .audio-player {
+            max-width: 800px; /* Define um tamanho máximo para o reprodutor de áudio na versão desktop */
+            margin: 20px auto; /* Centraliza o reprodutor de áudio */
+        }
+        
+        @media (max-width: 768px) {
+            .video-player {
+                width: 100%; /* Para dispositivos móveis */
+            }
+        
+            .video-player iframe {
+                height: auto; /* Mantém a proporção do vídeo */
+            }
+        
+            .audio-player audio {
+                width: 100%; /* O controle de áudio deve ser responsivo */
+            }
+        }               
         
         @media (max-width: 768px) {
             .gif-left, .gif-left2, .gif-left3, .gif-right, .gif-right2, .gif-right3 {
@@ -270,16 +305,16 @@
 
         <div class="media-container">
             <div class="video-player">
-                <iframe width="560" height="315" src="https://player.vimeo.com/video/922139181" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <iframe src="https://player.vimeo.com/video/922139181" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
             </div>
-        </P>            
-        <div class="audio-player">
-            <audio controls autoplay muted>
-                <source src="https://dl.dropboxusercontent.com/scl/fi/dy03nu2yhco3g3yql4aid/It_was_a_good_day_slowedreverb.mp3?rlkey=g5atcskmhnw07q4prk0sxl59v&st=5gha8rlj&dl=0" type="audio/mpeg">
-                Seu navegador não suporta o reprodutor de áudio.
-            </audio>
-        </div>
-        </div>
+        
+            <div class="audio-player">
+                <audio controls autoplay muted>
+                    <source src="https://dl.dropboxusercontent.com/scl/fi/dy03nu2yhco3g3yql4aid/It_was_a_good_day_slowedreverb.mp3?rlkey=g5atcskmhnw07q4prk0sxl59v&st=5gha8rlj&dl=0" type="audio/mpeg">
+                    Seu navegador não suporta o reprodutor de áudio.
+                </audio>
+            </div>
+        </div>                          
         <div class="flags">
             <div class="flags">
                 <div class="flag-container">
